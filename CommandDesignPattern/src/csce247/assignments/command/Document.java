@@ -7,7 +7,7 @@ public class Document {
 	 * @param name
 	 */
 	public Document(String name) {
-		//todo fill
+		this.name = name;
 	}
 	
 	/**
@@ -15,7 +15,7 @@ public class Document {
 	 * 
 	 */
 	public void load() {
-		
+		System.out.println("document" + name + "is loaded into view");
 	}
 	
 	/**
@@ -23,7 +23,7 @@ public class Document {
 	 * 
 	 */
 	public void spell() {
-		
+		System.out.println("document" + name + "is being checked for spelling errors");
 	}
 	
 	/**
@@ -31,7 +31,7 @@ public class Document {
 	 * 
 	 */
 	public void save() {
-		
+		System.out.println("document" + name + "is being saved");
 	}
 	
 	/**
@@ -39,6 +39,6 @@ public class Document {
 	 * 
 	 */
 	public void print() {
-		
+		System.our.println("document" + name "is printing");
 	}
 }
