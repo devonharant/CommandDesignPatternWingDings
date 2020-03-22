@@ -39,6 +39,6 @@ public class Document {
 	 * 
 	 */
 	public void print() {
-		System.our.println("document" + name "is printing");
+		System.out.println("document" + name "is printing");
 	}
 }
