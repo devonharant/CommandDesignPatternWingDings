@@ -2,6 +2,11 @@ package csce247.assignments.command;
 
 import java.util.*;
 
+/**
+ * *INSERT CLASS NAME AND DESC HERE*
+ * @author WingDings
+ *
+ */
 public class InputHandler {
 	
 	/**
@@ -15,13 +20,16 @@ public class InputHandler {
 	 */
 	private HashMap<String, Command> commands;
 	
-	
+	/**
+	 * 
+	 * @input
+	 */
 	public InputHandler(Document document) {
 		//Todo 
 	}
 	
 	/**
-	 * When this method is called you will call the appropriate command that's key matches the data parameter.
+	 * intputEntered method that will call the appropriate command that's key matches the data parameter.
 	 * @param data
 	 */
 	public void inputEntered(String data) {
