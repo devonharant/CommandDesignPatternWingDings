@@ -1,7 +1,7 @@
 package csce247.assignments.command;
 
 /**
- * *CLASS NAME AND DESC HERE*
+ * *INSERT CLASS NAME AND DESC HERE*
  * @author WingDings
  *
  */
