@@ -1,7 +1,7 @@
 package csce247.assignments.command;
 
 /**
- * *INSERT CLASS NAME AND DESC HERE*
+ * Command interface to be inherited by the children forcing execute method
  * @author WingDings
  *
  */

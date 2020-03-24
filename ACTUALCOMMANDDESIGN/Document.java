@@ -1,8 +1,8 @@
 package csce247.assignments.command;
 
 /**
- * *INSERT CLASS NAME AND DESC HERE*
- *
+ * Document class that provides a document
+ * with associated characteristics and methods
  * @author WingDings
  *
  */

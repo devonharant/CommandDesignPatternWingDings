@@ -18,11 +18,16 @@ public class InputHandler {
   private HashMap<String, Command> commands;
 
   /**
-   *
+   * Constructs hashmap with commands
    * @input
    */
   public InputHandler(Document document) {
-    commands = new HashMap<String, Command>();
+    commands = new HashMap<>();
+    
+    commands.put("load", LoadCommand);
+    commands.put("print", PrintCommand);
+    commands.put("save", SaveCommand);
+    commands.put("spell", SpellCommand);
   }
 
   /**
@@ -32,6 +37,12 @@ public class InputHandler {
    * @param data
    */
   public void inputEntered(String data) {
-    //commands<data>.execute();
+	if(!data.equalsIgnoreCase("load") || !data.equalsIgnoreCase("print") || !data.equalsIgnoreCase("save") || !data.equalsIgnoreCase("spell")) {
+		System.out.println("We do not recognize that command");
+		break;
+	}
+    Command command = commands.get(data);
+    command.execute();
+    
   }
 }
