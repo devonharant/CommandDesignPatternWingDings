@@ -24,10 +24,10 @@ public class InputHandler {
   public InputHandler(Document document) {
     commands = new HashMap<>();
     
-    commands.put("load", LoadCommand);
-    commands.put("print", PrintCommand);
-    commands.put("save", SaveCommand);
-    commands.put("spell", SpellCommand);
+    commands.put("load", new LoadCommand(document));
+    commands.put("print", new PrintCommand(document));
+    commands.put("save", new SaveCommand(document));
+    commands.put("spell", new SpellCommand(document));
   }
 
   /**
