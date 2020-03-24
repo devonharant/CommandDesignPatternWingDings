@@ -25,11 +25,15 @@ public class InputHandler {
 	 * @param data
 	 */
 	public void inputEntered(String data) {
-	print(map);
-		map.put("print");
-		map.put("load");
-		map.put("save");	
-		map.put("spell");		
+	print(commands);//to see if the map prints
+	Iterator<commands.Entry<String, Command> > iterator = commands.entrySet().iterator();
+	boolean there = false;
+	while(iterator.hasNext()) {
+	commands.Entry<String, commands> entry = iterator.next();
+		commands.put("print", PrintCommand);
+		commands.put("load", LoadCommand);
+		commands.put("save", SaveCommand);	
+		commands.put("spell", SpellCheckCommand);		
 			
 	}
 }
