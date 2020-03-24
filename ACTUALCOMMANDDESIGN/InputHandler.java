@@ -37,7 +37,7 @@ public class InputHandler {
    * @param data
    */
   public void inputEntered(String data) {
-	if(!data.equalsIgnoreCase("load") || !data.equalsIgnoreCase("print") || !data.equalsIgnoreCase("save") || !data.equalsIgnoreCase("spell")) {
+	if(!data.equalsIgnoreCase("load") && !data.equalsIgnoreCase("print") && !data.equalsIgnoreCase("save") && !data.equalsIgnoreCase("spell")) {
 		System.out.println("We do not recognize that command");
 		return;
 	}
