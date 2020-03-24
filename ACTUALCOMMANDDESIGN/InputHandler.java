@@ -39,7 +39,7 @@ public class InputHandler {
   public void inputEntered(String data) {
 	if(!data.equalsIgnoreCase("load") || !data.equalsIgnoreCase("print") || !data.equalsIgnoreCase("save") || !data.equalsIgnoreCase("spell")) {
 		System.out.println("We do not recognize that command");
-		break;
+		return;
 	}
     Command command = commands.get(data);
     command.execute();
