@@ -14,10 +14,10 @@ public class InputHandler {
 	"print" -> PrintCommand
 	 */
 	private HashMap<String, Command> commands;
-	
+	commands = new HashMap<>();	
 	
 	public InputHandler(Document document) {
-		//Todo 
+		
 	}
 	
 	/**
@@ -25,6 +25,11 @@ public class InputHandler {
 	 * @param data
 	 */
 	public void inputEntered(String data) {
-		//Todo
+	print(map);
+		map.put("print");
+		map.put("load");
+		map.put("save");	
+		map.put("spell");		
+			
 	}
 }
